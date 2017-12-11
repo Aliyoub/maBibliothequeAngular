@@ -1,0 +1,30 @@
+#footer{
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #337AB7;
+    padding: 10px;
+    color: #fff;
+}
+
+.footer-block-title{
+	font-weight: bold;
+	font-size: 16px;
+    color:#E2F1F4;  /*#809DC9; #F593A2; #D02728; #F57387;#DBBC23;*/
+}
+
+.footer-row-title{
+	margin-bottom: 10px;
+}
+
+.footer-item img{
+	width: 50px;
+}
+
+.footer-item div{
+	padding-top: 15px;
+	font-size: 11px;
+	width: 50%;
+	margin-bottom: 15px
+}

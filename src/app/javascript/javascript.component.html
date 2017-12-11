@@ -1,0 +1,24 @@
+<div class="container">
+	<div class="row">
+		<div *ngIf = "products" class="panel panel-primary">
+			<div class="panel-heading">HTML</div>
+			<div class="panel-body">		
+				<div>
+					<div *ngFor = "let product of products.items; let itemIndex = index" class="col-md-3">
+						<!--a routerLink="/detail/{{product.id}}"-->
+						<a routerLink="/detail/{{itemIndex}}" style="text-decoration: none">
+						<div *ngIf="product.volumeInfo.imageLinks.thumbnail && product.volumeInfo.title" class="panel panel-primary">
+							<div class="panel-heading">{{product.volumeInfo.title | slice:0:27}}...</div>
+							<div class="panel-body">		
+							 	<img src="{{product.volumeInfo.imageLinks.thumbnail}}" height="150"/>
+							</div>
+						</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

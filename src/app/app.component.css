@@ -1,0 +1,9 @@
+#top{top:0;margin:0;padding:0;background-color:#337AB7;height:50px;border-radius:0;}
+#top img{margin-left:3%; margin-top:0.2%;height: 90%;}
+#top span{color: white; margin-left: 5px}
+
+div h1{font-size: 1.8em;color: #F31928;text-align: center;}
+nav{text-align: center;}
+nav a button{
+ margin-top: 1px;
+}

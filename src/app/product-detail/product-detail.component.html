@@ -1,0 +1,28 @@
+<div class="container">
+<div class="row detailContentRow">
+	<div class="col-md-6">
+	<div *ngIf = "itemId" class="panel panel-primary">
+		<div class="panel-heading">{{itemTitle}}</div>
+		<div class="panel-body">
+			<div style="text-align:center;margin-bottom:10%"><img src="http://books.google.com/books/content?id={{itemId}}&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api">
+			</div>
+			<div>
+				<span class="bold">Titre</span> : {{itemTitle}}<br/>
+				<span class="bold">Editeur</span> : {{itemPublisher}}<br/>
+				<span class="bold">Date de publication</span> : {{itemPublishedDate}}<br/>
+				<span *ngFor = "let author of itemAuthors"><span class="bold">Auteur</span> : {{author}}<br/></span>
+				<p></p>	
+			</div>				
+		</div>			
+	</div>
+	</div>
+	<div class="col-md-5 detailContent">
+		<span class="bold ">Description</span> : {{itemDescription}}
+	</div>
+</div>
+<div class="row goBackButtonRow">
+	<div class="col-md-2 col-md-offset-5">
+		<button class="btn btn-primary btn-block" (click)="goBack()">Retour à la liste</button>
+	</div>	
+</div>
+<p></p>

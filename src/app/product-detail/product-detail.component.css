@@ -1,0 +1,14 @@
+.detailContentRow{
+	padding: 3%;
+}
+.detailContent{
+	text-align: justify;
+}
+#imgDetail{
+	display: inline-block;
+	text-align:center;
+}
+.goBackButtonRow{
+	margin-bottom: 20%;
+}
+.bold{font-weight: bold;}
